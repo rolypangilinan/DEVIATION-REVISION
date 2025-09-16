@@ -1,5 +1,5 @@
 # ADD VALUE AT LOG FILE
-
+# LINE 346 DISABLE "RESET LOG" BUTTON
 
 # CREATE LOG FILE WITH SAVE MODE AND RESET BUTTON
 # CREATE A FOCUS BUTTON
@@ -343,7 +343,7 @@ class FluctuationMonitor:
         ttk.Button(button_frame, text="Reset All", 
                   command=self.reset_all_fluctuations).pack(side=tk.LEFT, padx=2)
         ttk.Button(button_frame, text="Focus Trends", command=self.open_focus_window).pack(side=tk.LEFT, padx=2)
-        ttk.Button(button_frame, text="Reset Log", command=self.reset_log).pack(side=tk.LEFT, padx=2)
+        # ttk.Button(button_frame, text="Reset Log", command=self.reset_log).pack(side=tk.LEFT, padx=2)   # DISABLE "LOG RESET" BUTTON
         self.log_frame = ttk.Frame(self.main_frame)
         self.log_frame.pack(fill=tk.BOTH, expand=True, pady=10)
         ttk.Label(self.log_frame, text="Fluctuation Log", font=('Arial', 14, 'bold')).pack(pady=5)
